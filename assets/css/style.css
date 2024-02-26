@@ -8,7 +8,18 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #111;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #18d26e;
+  border-radius: 10px;
 
+}
 
 #body {
   font-family: "Figtree", sans-serif;
