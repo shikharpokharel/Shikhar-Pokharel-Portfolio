@@ -3,6 +3,9 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EV5N30D0J"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -59,6 +62,7 @@
         body{
             cursor: url("/assets/img/Cursor.png"), auto;
         }
+
     </style>
     <!-- Chatra {literal} -->
         <script>
@@ -74,18 +78,31 @@
             })(document, window, 'Chatra');
         </script>
     <!-- /Chatra {/literal} -->
+    
+      
 
 </head>
 
 <body id="body">
+
+      
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
+      
+      <!-- scripts -->
+      <!-- <script src="/assets/js/particles.js"></script> -->
+
+
+      
     
-    <div class="video-wrapper">
+      
+    <!-- <div class="video-wrapper">
         <video id="myVideo" autoplay muted loop>
           <source src="assets/img/Bgvideo.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <div class="overlay"></div>
-      </div>
+      </div> -->
 
       
 
@@ -100,7 +117,6 @@
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
             <h2>I'm a passionate <span class="animate"></span></h2>
-
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -1028,6 +1044,54 @@
         });
     </script>
 
+
+<script>
+    window.onload = function() {
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" }
+                },
+                "modes": {
+                    "repulse": { "distance": 100, "duration": 0.4 },
+                    "push": { "particles_nb": 4 }
+                }
+            }
+        });
+    };
+</script>
 
 </body>
 
